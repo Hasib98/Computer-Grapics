@@ -52,6 +52,8 @@ void display1() {
 	glFlush();  // Render now
 }
 
+////////////////////////////
+
 
 
 
@@ -59,7 +61,7 @@ void display1() {
 /* Main function: GLUT runs as a console application starting at main()  */
 int main(int argc, char** argv) {
 	glutInit(&argc, argv);                 // Initialize GLUT
-	glutCreateWindow("OpenGL Setup Test"); // Create a window with the given title
+	glutCreateWindow("Created by S. M. Hasib (18-36939-1)"); // Create a window with the given title
 	glutInitWindowSize(320, 320);   // Set the window's initial width & height
 	glutDisplayFunc(display1); // Register display callback handler for window re-paint
 	glutMainLoop();           // Enter the event-processing loop
