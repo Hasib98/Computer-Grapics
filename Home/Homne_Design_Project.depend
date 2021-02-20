@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1612844836 source:h:\glut\first lab task\second lab task\home\main.cpp
+1613273307 source:h:\glut\homne_design_project\main.cpp
 	<iostream>
 	<windows.h>
 	<GL/glut.h>
@@ -222,4 +222,18 @@
 
 1341006774 c:\program files (x86)\codeblocks\mingw\include\math.h
 	<_mingw.h>
+
+1613849376 source:h:\glut\home_design_project\main.cpp
+	<iostream>
+	<windows.h>
+	<GL/glut.h>
+	<math.h>
+	<string.h>
+
+1613849376 source:h:\glut\github\home\main.cpp
+	<iostream>
+	<windows.h>
+	<GL/glut.h>
+	<math.h>
+	<string.h>
 
