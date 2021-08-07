@@ -123,8 +123,8 @@ void display(void)
 {
     glClear(GL_COLOR_BUFFER_BIT);
 
-   glColor3ub(61,168,236);
-   Circle_Filled(0,0,0.55,200);
+   //glColor3ub(61,168,236);
+   //Circle_Filled(0,0,0.55,200);
    glColor3ub(100,50,0);
    Circle_Filled(0,0,0.5,200);
     rotation();

@@ -421,22 +421,6 @@ void rain()
 
 /*................tree.............*/
 
-void Root()
-{
-    glColor3ub(113,27,42);
-    //glColor3ub(1,1,1);
-    glBegin(GL_QUADS);
-
-
-
-    glVertex2f(0.0064, -0.15);
-    glVertex2f(-0.0064,-0.15);
-
-    glVertex2f(-0.0064, -0.3);
-    glVertex2f(0.0064, -0.3);
-
-    glEnd();
-}
 
 static void resize(int width, int height)
 {
@@ -461,54 +445,6 @@ void canopy(float height,float Base)
     gluCylinder(qobj, Base, Base - (0.2 * Base), height, 20, 20);
     glPopMatrix();
 }
-void maketree(float height,float Base)
-{
-
-    glPushMatrix();
-
-
-
-    float angle;
-    canopy(height, Base);
-    glTranslatef(0.0f, height,0.0f);
-    height -=height*0.2f;
-    Base -=Base*0.3f;
-    for(float a=0; a<3.5; a++)
-    {
-
-
-        angle = 20+((rand()%50));
-        if(angle >48)
-            angle = -(20+((rand()%50)));
-        if (height > 1)
-        {
-            glPushMatrix();
-            if (flag)
-                glRotatef(angle, 1.0f, 0.0f, 1.0f);
-            else
-                glRotatef(angle, 0.0f, 1.0f, 1.0f);
-            flag = !flag;
-            maketree(height, Base); //recursive call
-            glPopMatrix();
-
-        }
-        else
-        {
-            //glColor3f(0.0f, 1.0f / a, 0.0f);
-            glColor3ub(18,179,18);
-            glutSolidSphere(0.1f, 10, 10);// for fruits.
-
-        }
-    }
-    //Glut.glutSwapBuffers();
-    glPopMatrix();
-    glutSwapBuffers();
-
-
-
-}
-
-
 
 
 void display(void)
@@ -555,7 +491,7 @@ hill(-0.0);
     glScalef(0.05,0.05,0);
 
 
-   maketree(3.8f,0.08f);
+
 
 
 
@@ -566,7 +502,7 @@ hill(-0.0);
    glTranslatef(-0.69,0.26,0);
    // glScalef(0.0,0.0,0);
 
-    Root();
+
 
 
     glLoadIdentity();
