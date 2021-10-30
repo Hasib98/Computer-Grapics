@@ -224,3 +224,10 @@
 	<stddef.h>
 	<GL/gl.h>
 
+1620094641 source:h:\all\glut\github\eiffel\main.cpp
+	<windows.h>
+	<math.h>
+	<GLUT/glut.h>
+	<GL/glut.h>
+	<stdlib.h>
+

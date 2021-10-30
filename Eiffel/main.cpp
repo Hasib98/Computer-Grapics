@@ -1751,12 +1751,12 @@ void handleKeypress(unsigned char key, int x, int y)
         glutDisplayFunc(Day);
         break;
 
-    case 'z':
+    case 'r':
         glutDisplayFunc(Dayrain);
         break;
 
 
-    case 'x':
+    case 't':
         glutDisplayFunc(Nightrain);
         break;
 
